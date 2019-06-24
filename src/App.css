@@ -1,0 +1,36 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  /* background: linear-gradient(to right, #11998e, #38ef7d); */
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
+  column-gap: 40px;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    column-gap: 40px;
+  }
+}
+
+.ingredients li {
+  margin-bottom: 0.4rem;
+}
+
+.ingredients {
+  list-style: circle !important;
+}
